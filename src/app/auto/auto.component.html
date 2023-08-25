@@ -1,0 +1,20 @@
+<!-- <p>{{ saludo }}!</p>
+<p>Este es otro saludo: <strong [innerText]="saludo"></strong> </p>
+
+
+
+<p (click)="mostrarAlerta(nombre)">Haceme click!</p>
+<p (click)="actualizarNombre('Pedro')">Actualizar nombre!</p> -->
+
+<br>
+AUTO:
+<label>Nombre:</label>
+<input [value]="nombre"
+  (input)="actualizarValorNombre($event)">
+
+<p>Este es el valor del nombre:
+  <strong [innerText]="nombre"></strong></p>
+
+MIS PIEZAS:
+<app-pieza [material]="nombre"
+(onAgregarMaterialClick)="agregarPieza($event)" ></app-pieza>
